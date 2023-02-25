@@ -4,7 +4,7 @@ $row_count = 1;
 
 $filename = "short-abstracts_lang=en.ttl";
 
-$headings = array('enwiki', '`key`', 'language', 'value');
+$headings = array('id', '`key`', 'language', 'value');
 
 echo join("\t", $headings) . "\n";
 
@@ -31,7 +31,7 @@ while (!feof($file_handle))
 	
 	if ($row_count++ == 10)
 	{
-		exit();
+		//exit();
 	}
 	
 }	
